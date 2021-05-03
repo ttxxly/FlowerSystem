@@ -1,0 +1,281 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #737373;
+	background-color: #ffffff;
+}
+/* 页面头部开始 */
+.header{
+	height: 120px;
+	width: 100%;
+	background-color: #fff;
+	top:0;
+	left: 0;
+	border-bottom: 2px solid #ccc;
+	z-index: 999;
+	padding-bottom: 50px;
+}
+.header-banner{
+	position: relative;
+	width: 1190px;
+	margin: 0 auto;
+	margin-left: 120px;
+}
+/* 头部左边 */
+.header .header-left{
+	float: left;
+	padding-top: 12px;
+	padding-bottom:4px;
+}
+.left-text{
+	position: relative;
+	display: block;
+	float: left;
+	top: 30px;
+}
+.left-text p{
+	font-size: 32px;
+	color: #507094;
+}
+/* 头部右边 */
+.header .header-right{
+	width: 824px;
+	height: 110px;
+	float: right;
+	position: relative;
+
+}
+/* 搜索框部分 */
+.input-group{
+	top: 40px;
+	left: 40px;
+}
+.input-group .form-control{
+	width: 300px;
+	height: 40px;
+	margin-right: 8px;
+	margin-left: 60px;
+
+}
+.input-group .btn{
+	height: 40px;
+}
+/* 电话部分 */
+.phone{
+	position: absolute;
+	right: 30px;
+	top: 40px;
+	font-size: 22px;
+}
+.phone a{
+	text-decoration: none;
+}
+
+/* 内容开始 */
+.content{
+	width: 100%;
+	background-size:contain;
+	background: url("../images/bg4.jpg") no-repeat;
+	margin-top: 1px;
+}
+.content-banner{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 74px;
+}
+.content-banner .registerbox{
+	width: 340px;
+	height: 520px;
+	float: right;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	padding: 16px 30px;
+	margin: 20px 100px 10px 10px;
+	background-color: rgba(255,255,255,0.5);
+}
+.content-banner .registerbox h2{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #507094;
+	margin-bottom: 14px;
+}
+.content-banner .registerbox li input{
+	text-indent:10px;
+	width: 268px;
+	height: 34px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 21px;
+}
+.content-banner .registerbox .register{
+	width: 268px;
+	height: 34px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #507094;
+	border:1px solid #797352;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+}
+.content-banner .registerbox .register:hover{
+	background-color: #4b8e94;
+}
+.content-banner .registerbox label{
+	font-size: 12px;
+}
+.content-banner .loginbox .other{
+	width: 268px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 12px;
+}
+.content-banner .loginbox .other a{
+	color: #3b639f;
+}
+/* 内容结束 */
+
+
+
+
+/*body{*/
+	/*background: #fff;*/
+/*}*/
+
+
+/*!* 注册页头部开始 *!*/
+/*.header{*/
+	/*border-bottom: 1px solid #eaeaea;*/
+/*}*/
+/*.header-banner{*/
+	/*!*width: 946px;*!*/
+	/*!*margin: 0 auto;*!*/
+	/*padding-top: 20px ;*/
+	/*padding-bottom: 20px;*/
+	/*padding-left: 100px;*/
+/*}*/
+/*!* 注册页头部结束 *!*/
+/*!* 内容开始 *!*/
+/*.content{*/
+	/*width: 100%;*/
+	/*background-size:contain;*/
+	/*background: url("../images/bg4.jpg") no-repeat;*/
+	/*padding-bottom: 20px;*/
+/*}*/
+/*.content-banner{*/
+	/*width: 100%;*/
+	/*margin: 0 auto;*/
+	/*padding-top: 30px;*/
+	/*padding-bottom: 74px;*/
+/*}*/
+/*.content-banner .loginbox{*/
+	/*width: 298px;*/
+	/*height: 516px;*/
+	/*border:1px solid #ddd;*/
+	/*float: right;*/
+	/*padding-left:30px;*/
+	/*padding-top: 16px;*/
+	/*margin-bottom: 50px;*/
+	/*background-color: rgba(255,255,255,0.5);*/
+	/*margin-right: 100px;*/
+	/*border-radius: 5px;*/
+/*}*/
+/*.content-banner .loginbox h2{*/
+	/*font-size: 20px;*/
+	/*color: #ef4222;*/
+	/*font-weight: 500;*/
+	/*height: 40px;*/
+	/*line-height: 40px;*/
+	/*margin-bottom: 14px;*/
+/*}*/
+
+	/*.content-banner .loginbox li input{*/
+		/*text-indent:10px;*/
+		/*width: 268px;*/
+		/*height: 34px;*/
+		/*border:1px solid #ccc;*/
+		/*margin-bottom: 21px;*/
+		/*border-radius: 5px;*/
+	/*}*/
+	/*.content-banner .loginbox .ycode{*/
+		/*!*display: block;*/
+		/*float: left;*!*/
+	/*}*/
+	/*.content-banner .loginbox .ycode input:first-child{*/
+		/*width: 100px;*/
+	/*}*/
+	/*.content-banner .loginbox .ycode #msg{*/
+		/*margin-right: 0;*/
+	/*}*/
+	/*.content-banner .loginbox .ycode a{*/
+		/*text-decoration: none;*/
+
+	/*}*/
+	/*.content-banner .loginbox .ycode a:hover{*/
+		/*color: #ef4222;*/
+	/*}*/
+	/*.content-banner .loginbox label{*/
+		/*font-size: 12px;*/
+	/*}*/
+	/*.content-banner .loginbox .answer{*/
+		/*vertical-align: middle;*/
+		/*margin-right: 10px;*/
+	/*}*/
+	/*.content-banner .loginbox>a{*/
+		/*font-size: 12px;*/
+		/*color: #3b639f;*/
+	/*}*/
+	/*.content-banner .loginbox>a:hover{*/
+		/*color: #ef4222;*/
+		/*text-decoration: none;*/
+	/*}*/
+	/*.content-banner .loginbox .register{*/
+		/*width: 268px;*/
+		/*height: 34px;*/
+		/*margin-top: 23px;*/
+		/*background: url("../images/newucspirite.png") no-repeat 0 0;*/
+		/*border:1px solid #ef4222;*/
+		/*border-radius: 5px;*/
+		/*color: #fff;*/
+		/*font-size: 18px;*/
+	/*}*/
+	/*.content-banner .loginbox .register:hover{*/
+		/*background: url("../images/newucspirite.png") no-repeat 0 -36px;*/
+	/*}*/
+	/*.content-banner .loginbox .other{*/
+		/*width: 268px;*/
+		/*margin-top: 37px;*/
+		/*border-top: 1px solid #eaeaea;*/
+		/*height: 46px;*/
+		/*line-height: 46px;*/
+		/*font-size: 12px;*/
+		/*margin-bottom: 12px;*/
+	/*}*/
+	/*.content-banner .loginbox .other a{*/
+		/*color: #3b639f;*/
+	/*}*/
+	/*.content-banner .loginbox .other a:hover{*/
+		/*color: #ef4222;*/
+	/*}*/
+/*!* .content-banner .loginbox span{*/
+	/*display: block;*/
+	/*position: relative;*/
+	/*top:-15px;*/
+	/*font-size: 12px;*/
+	/*} *!*/
+
+	/*.content-banner .loginbox span{*/
+		/*display: block;*/
+		/*position: relative;*/
+		/*top:-15px;*/
+		/*font-size: 12px;*/
+	/*}*/
+	/*!* 内容结束 *!*/

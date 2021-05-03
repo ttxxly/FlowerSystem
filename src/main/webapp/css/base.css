@@ -1,0 +1,32 @@
+body,div,ul,ol,li,dl,dt,dd,input,span,a,img,p,h1,h2,h3,h4{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ccc;
+    font:14px "Microsoft YaHei";
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    background:none;  
+    outline:none;  
+    border:0px none;  
+}
+p{line-height: 0}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}

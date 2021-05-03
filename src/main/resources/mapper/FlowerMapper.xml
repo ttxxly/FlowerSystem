@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+    <mapper namespace="com.gdcp.bishe.dao.FlowerDao" >
+
+  <select id="getFlowerByName" resultType="com.gdcp.bishe.bean.Flower" parameterType="String" >
+    select * from flower
+    where flower_name like CONCAT(CONCAT('%', #{flowerName}), '%')
+    order by flower_price
+  </select>
+
+    <select id="allSelectFlower" resultType="com.gdcp.bishe.bean.Flower" >
+        select * from flower
+    where flower_name like CONCAT(CONCAT('%', #{flowerName}), '%')
+    <!--<choose>-->
+        <!--<when test="firstMoney != null and lastMoney != null">-->
+            <!--and flower_price between #{firstMoney} and #{lastMoney}-->
+        <!--</when>-->
+        <!--<when test="firstMoney != null">-->
+            <!--and flower_price &gt;= #{firstMoney}-->
+        <!--</when>-->
+        <!--<when test="lastMoney != null">-->
+            <!--and flower_price  &lt;= lastMoney-->
+        <!--</when>-->
+        <!--<when test="firstMoney == null and lastMoney == null">-->
+            <!--and 1 = 1-->
+        <!--</when>-->
+    <!--</choose>-->
+        <if test="firstMoney != null and lastMoney != null">
+            and flower_price between #{firstMoney} and #{lastMoney}
+        </if>
+        order by flower_price
+
+    </select>
+
+  <select id="findFlower" resultType="com.gdcp.bishe.bean.Flower" parameterType="String">
+    select * from flower
+    where flower_name = #{flowerName}
+    order by flower_price
+  </select>
+
+  <select id="selectFlowerList" resultType="com.gdcp.bishe.bean.Flower" >
+    select * from flower
+    order by flower_price
+  </select>
+
+  <select id="findAll" resultType="com.gdcp.bishe.bean.Flower">
+    select * from flower
+    order by flower_price
+  </select>
+
+  <select id="find" resultType="com.gdcp.bishe.bean.Flower" parameterType="Integer">
+    select * from flower
+      where flower_id = #{flowerId}
+      order by flower_price
+  </select>
+
+  <select id="selectFlowerByType" resultType="com.gdcp.bishe.bean.Flower" parameterType="String">
+    select * from flower
+    where flower_type = #{flowerType}
+    order by flower_price
+  </select>
+
+  <select id="findFlowerById" resultType="com.gdcp.bishe.bean.Flower" parameterType="String">
+    select * from flower
+    where flower_id = #{flowerId}
+    order by flower_price
+</select>
+
+    <select id="cartSelectFlower"  resultType="com.gdcp.bishe.bean.Flower"  parameterType="Integer">
+        select * from flower
+        where flower_id = #{flowerId}
+    </select>
+
+  <delete id="deleteById" parameterType="Integer" >
+    delete from flower
+    where flower_id = #{flowerId}
+  </delete>
+
+  <insert id="insertFlower" parameterType="com.gdcp.bishe.bean.Flower" >
+    insert into flower (
+            flower_name,
+            flower_number,
+            flower_price,
+            flower_img,
+            flower_type
+      )
+    values (
+            #{flowerName},
+            #{flowerNumber},
+            #{flowerPrice},
+            #{flowerImg},
+            #{flowerType}
+      )
+  </insert>
+
+  <update id="updateFlower" parameterType="com.gdcp.bishe.bean.Flower" >
+    update flower
+    <set>
+      <if test="flowerName != null">
+        flower_name =#{flowerName},
+      </if>
+      <if test="flowerNumber != null">
+        flower_number =#{flowerNumber},
+      </if>
+      <if test="flowerPrice != null">
+        flower_price =#{flowerPrice},
+      </if>
+      <if test="flowerType != null">
+        flower_type =#{flowerType},
+      </if>
+    </set>
+      where flower_id = #{flowerId}
+  </update>
+
+  <update id="updateFlowerNumber" >
+      update flower set
+      flower_number = flower_number - #{flowerNumber}
+      where flower_name = #{flowerName}
+  </update>
+
+
+</mapper>

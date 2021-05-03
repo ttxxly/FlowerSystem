@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gdcp.bishe.dao.UserDao" >
+
+  <select id="findUser" resultType="com.gdcp.bishe.bean.User" parameterType="String">
+
+    select * from user
+    where user_name = #{userName}
+  </select>
+
+
+  <select id="getUserByName" resultType="com.gdcp.bishe.bean.User" parameterType="String">
+    select * from user
+    where user_name like CONCAT(CONCAT('%', #{userName}), '%')
+  </select>
+
+  <select id="selectUserList" resultType="com.gdcp.bishe.bean.User">
+    select * from user
+  </select>
+
+    <select id="findUserById" resultType="com.gdcp.bishe.bean.User" parameterType="String">
+        select * from user
+        where user_id = #{userId}
+    </select>
+
+  <select id="selectUserListCount" parameterType="com.gdcp.bishe.bean.User" resultType="com.gdcp.bishe.bean.User">
+    select count(*) from  user
+  </select>
+
+  <delete id="deleteUser" parameterType="Integer">
+    delete from user
+    where user_id = #{userId}
+  </delete>
+
+  <insert id="insertUser" parameterType="com.gdcp.bishe.bean.User" >
+    insert into user (
+            user_name,
+            user_password,
+            user_phone,
+            user_email,
+            user_money)
+    values (
+            #{userName},
+            #{userPassword},
+            #{userPhone},
+            #{userEmail},
+            0)
+  </insert>
+
+  <insert id="RinsertUser" parameterType="com.gdcp.bishe.bean.User">
+    insert into user (
+            user_name,
+            user_password,
+            user_phone,
+            user_email,
+            user_money)
+    values (
+            #{userName},
+            #{userPassword},
+            #{userPhone},
+            #{userEmail},
+            #{userMoney})
+  </insert>
+
+  <update id="revisePassword" parameterType="com.gdcp.bishe.bean.User">
+    update user
+    set user_password = #{userPassword}
+    where user_name = #{userName}
+    and user_phone = #{userPhone}
+  </update>
+
+    <update id="insertMoney" parameterType="Integer">
+        update user
+        set user_money = user_money + #{userMoney}
+        where user_id = #{userId}
+    </update>
+
+    <update id="updateMoney">
+        update user
+        set user_money = user_money - #{userMoney}
+        where user_id = #{userId}
+    </update>
+
+  <select id="checkPhoneName" parameterType="String" resultType="com.gdcp.bishe.bean.User">
+    select * from user
+    where user_phone = #{userPhone}
+    AND  user_name = #{userName}
+  </select>
+
+  <update id="updateUser" parameterType="com.gdcp.bishe.bean.User" >
+    update user
+    <set>
+      <if test="flowerName != null">
+          flower_name =#{flowerName},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName},
+      </if>
+      <if test="userPassword != null">
+        user_password = #{userPassword},
+      </if>
+      <if test="userPhone != null">
+        user_phone = #{userPhone},
+      </if>
+      <if test="userMoney != null">
+        user_money = #{userMoney},
+      </if>
+      <if test="userEmail != null">
+        user_email = #{userEmail},
+      </if>
+    </set>
+    where user_id = #{userId}
+  </update>
+
+</mapper>

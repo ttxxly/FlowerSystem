@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gdcp.bishe.dao.OrderDao" >
+
+    <insert id="insertOrder" parameterType="com.gdcp.bishe.bean.Order">
+        insert into o_order(
+          flower_name,
+          user_id,
+          order_number,
+          order_address,
+          order_price,
+          order_user,
+          order_time,
+          order_phone,
+          order_n
+        )values (
+          #{flowerName},
+          #{userId},
+          #{orderNumber},
+          #{orderAddress},
+          #{orderPrice},
+          #{orderUser},
+          #{orderTime},
+          #{orderPhone},
+          #{orderN}
+        )
+    </insert>
+
+  <select id="selectOrderByUser" parameterType="Integer" resultType="com.gdcp.bishe.bean.Order">
+      select * from o_order
+      where user_Id = #{userId}
+  </select>
+
+  <select id="selectOrderList" parameterType="String"
+          resultType="com.gdcp.bishe.bean.Order">
+    select * from o_order
+    where order_user like CONCAT(CONCAT('%', #{orderUser}), '%')
+  </select>
+
+    <select id="orderFind" parameterType="Integer" resultType="com.gdcp.bishe.bean.Order">
+        select * from o_order
+        where user_id = #{userId}
+    </select>
+
+    <select id="selectOrderById" parameterType="Integer" resultType="com.gdcp.bishe.bean.Order">
+        select * from o_order
+        where order_id = #{orderId}
+    </select>
+
+    <update id="updateOrder" parameterType="com.gdcp.bishe.bean.Order">
+        update o_order
+        <set>
+            <if test="orderNumber != null">
+                order_number =#{orderNumber},
+            </if>
+            <if test="orderAddress != null">
+                order_address =#{orderAddress},
+            </if>
+            <if test="orderPrice != null">
+                order_price =#{orderPrice},
+            </if>
+            <if test="orderUser != null">
+                order_user =#{orderUser},
+            </if>
+            <if test="orderPhone != null">
+                order_phone = #{orderPhone},
+            </if>
+        </set>
+        where order_id = #{orderId}
+    </update>
+</mapper>

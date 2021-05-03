@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #737373;
+    background-color: #ffffff;
+}
+/* 页面头部开始 */
+.header{
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+}
+.header-banner{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+/* 头部左边 */
+.header .header-left{
+    padding-top: 20px;
+    padding-bottom:4px;
+    float: left;
+    margin-left: 110px;
+}
+/* 头部右边 */
+.header .header-right{
+    width: 70%;
+    height: 110px;
+    /* background: pink; */
+    float: right;
+    position: relative;
+}
+/* 登陆注册 */
+.header .header-right .reg-login{
+    position: absolute;
+    top:10px;
+    right: 200px;
+    color: #9f9f9f;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.header-right .reg-login a{
+    color: #9f9f9f;
+}
+.header-right .reg-login span{
+    padding: 0 8px;
+}
+.header-right .reg-login a:hover{
+    text-decoration: none;
+    color: #ef4222;
+}
+.header-right .reg-login .car{
+    width: 70px;
+}
+.reg-login .car b{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.reg-login .car em{
+    font-style: normal;
+    color: #ef9623;
+}
+
+/* 导航条 */
+/*.navbar .navbar-default{
+    width: 700px;
+    position: absolute;
+    top: 147px;
+    height: 50px;
+    color: #ef4222;
+    font-size: 14px;
+    background-color: rgba(209, 210, 214, 0.2);
+    padding-left: 250px;
+}*/
+/* 搜索框部分 */
+.input-group{
+    top: 80px;
+    left: 120px;
+}
+.input-group .form-control{
+    height: 40px;
+    margin-right: 8px;
+    margin-left: 60px;
+}
+.input-group .btn{
+    height: 40px;
+    left: 60px;
+}
+.sort{
+    position: absolute;
+    top: 40px;
+    left: 90px;
+}
+/* 电话部分 */
+.phone{
+    position: absolute;
+    right: 200px;
+    top: 65px;
+    font-size: 20px;
+}
+.phone a{
+    text-decoration: none;
+}
+
+
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*list-style: none;*/
+/*}*/
+
+/*!* 页面头部开始 *!*/
+/*.header{*/
+    /*background-color: #fff;*/
+    /*height: 146px;*/
+    /*width: 100%;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*border-bottom: 2px solid #ccc;*/
+    /*z-index: 999;*/
+    /*padding-bottom: 50px;*/
+/*}*/
+/*.header-banner{*/
+    /*position: relative;*/
+    /*width: 1190px;*/
+    /*margin: 0 auto;*/
+    /*margin-left: 150px;*/
+/*}*/
+/*!* 头部左边 *!*/
+/*.header .header-left{*/
+    /*padding-top: 12px;*/
+    /*padding-bottom:4px;*/
+    /*float: left;*/
+/*}*/
+/*!* 头部右边 *!*/
+/*.header .header-right{*/
+    /*width: 824px;*/
+    /*height: 110px;*/
+    /*!* background: pink; *!*/
+    /*float: right;*/
+    /*position: relative;*/
+
+/*}*/
+/*!* 登陆注册 *!*/
+/*.header .header-right .reg-login{*/
+    /*position: absolute;*/
+    /*top:14px;*/
+    /*right: 50px;*/
+    /*color: #9f9f9f;*/
+    /*font-size: 14px;*/
+/*}*/
+/*.header-right .reg-login a{*/
+    /*color: #9f9f9f;*/
+/*}*/
+/*.header-right .reg-login span{*/
+    /*padding: 0 8px;*/
+/*}*/
+/*.header-right .reg-login a:hover{*/
+    /*text-decoration: none;*/
+    /*color: #ef4222;*/
+/*}*/
+/*.header-right .reg-login .car{*/
+
+    /*width: 70px;*/
+/*}*/
+/*.reg-login .car b{*/
+    /*display: inline-block;*/
+    /*width: 16px;*/
+    /*height: 16px;*/
+    /*vertical-align: middle;*/
+/*}*/
+/*.reg-login .car em{*/
+    /*font-style: normal;*/
+    /*color: #ef4222;*/
+/*}*/
+
+/*!* 导航条 *!*/
+/*.navbar {*/
+    /*position: absolute;*/
+    /*top: 40px;*/
+    /*right: 330px;*/
+    /*width: 550px;*/
+    /*color: #ef4222;*/
+    /*font-size: 14px;*/
+/*}*/
+/*!* 搜索框部分 *!*/
+/*.input-group .form-control{*/
+    /*width: 300px;*/
+    /*height: 30px;*/
+    /*margin-right: 8px;*/
+    /*margin-left: 60px;*/
+
+/*}*/
+/*.input-group .btn{*/
+    /*height: 35px;*/
+/*}*/
+/*!* 电话部分 *!*/
+/*.phone{*/
+    /*position: absolute;*/
+    /*right: 120px;*/
+    /*top: 120px;*/
+/*}*/
+/*.phone a{*/
+    /*text-decoration: none;*/
+/*}*/
+/* 中心专区部分 */
+.center{
+    width: 1400px;
+    height:700px ;
+    margin: 5px 50px auto;
+    margin-bottom: 20px;
+}
+.center .left{
+    width: 278px;
+    height: 655px;
+    float: left;
+}
+.center .left h3 a{
+    font-size: 26px;
+    color: #ab0828;
+    font-weight: 700;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.center .left h3 span{
+    font-size: 14px;
+    color: #6e6e6e;
+}
+.center .left .zhuangqu{
+    width: 278px;
+    height: 228px;
+    background-color: #cccccc;
+}
+.center .left .zhuangqu a{
+    text-decoration: none;
+}
+.center .left .zhuangqu h5{
+    font-size: 26px;
+    color: #ab0828;
+    padding-top: 65px;
+    text-align: center;
+}
+.center .left .zhuangqu p{
+    height: 30px;
+    line-height: 30px;
+    margin: 45px 80px;
+    border: 1px solid #7d0022;
+    font-size: 18px;
+    color: #ab0828;
+    text-align: center;
+}
+.center .right{
+    margin-top: 58px;
+    width: 982px;
+    height: 650px;
+    float: left;
+   /* background-color: #ffdcea;*/
+}
+.center .right .container a{
+    text-decoration: none;
+}
+.center .right .col-xs-3{
+    width: 246px;
+   text-align: center;
+}
+.center .right .more {
+    text-align: right;
+    margin-right: 20px;
+}
+.center .right .more a{
+    text-decoration: none;
+}
+/* 底部 */
+.foot{
+    text-align: center;
+    color: pink;
+    font-size: 36px;
+}
