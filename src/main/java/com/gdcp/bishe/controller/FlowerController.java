@@ -157,6 +157,7 @@ public class FlowerController {
         List<Flower> flowerList = flowerService.allSelectFlower(flowerName,
                 firstMoney, lastMoney);
         model.addAttribute("FLOWER_LIST", flowerList);
+        model.addAttribute("FLOWER_COUNT", flowerList.size());
         return "view/selectFlower";
     }
 

@@ -496,8 +496,7 @@
                 <p>售后服务电话：13378216662</p>
             </div>
             <div class="col-xs-2">
-                <p><img src="${pageContext.request.contextPath}/images/erweima.png" width="120" height="120"> </p>
-                <p>公众号</p>
+                <p>公众号:xxxx</p>
             </div>
         </div>
     </div>

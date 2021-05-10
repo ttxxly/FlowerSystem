@@ -12,7 +12,7 @@
         <!-- spring版本 -->
         <spring.version>5.0.2.RELEASE</spring.version>
         <!-- mysql版本 -->
-        <mysql.version>6.0.5</mysql.version>
+        <mysql.version>8.0.15</mysql.version>
         <!-- mybatis版本 -->
         <mybatis.version>3.4.5</mybatis.version>
         <jackson.version>2.9.4</jackson.version>

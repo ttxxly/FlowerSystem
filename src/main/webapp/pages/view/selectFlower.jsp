@@ -18,19 +18,21 @@
 <%--头部--%>
 <jsp:include page="head.jsp"/>
 
-<c:forEach items="${FLOWER_LIST}" var="flower_list">
-<div class="col-xs-3"><a href="/pages/view/User/buyFlowerById?flowerId=${flower_list.flowerId}" class="info">
-    <img src = "${pageContext.request.contextPath}/${flower_list.flowerImg}">
-    <h5>${flower_list.flowerName}</h5>
-    <p>
-        <span>￥</span>${flower_list.flowerPrice}
-    </p>
-    <input type="hidden" value="${flower_list.flowerId}">
-</a></div>
-<c:if test="${status.count % 4 == 0}">
-<tr></tr>
-    </c:if>
-</c:forEach>
+<div id="sss" style="padding-left: 100px;padding-right: 100px;">
+    <c:forEach items="${FLOWER_LIST}" var="flower_list">
+        <div class="col-xs-3">
+            <a href="/pages/view/User/buyFlowerById?flowerId=${flower_list.flowerId}" class="info">
+                <img src="${pageContext.request.contextPath}/${flower_list.flowerImg}"
+                     style="width: 400px; height: 300px;margin-top: 5px;margin-bottom: 5px">
+                <p>${flower_list.flowerName} ￥${flower_list.flowerPrice}</p>
+                <br/>
+                <input type="hidden" value="${flower_list.flowerId}">
+            </a>
+        </div>
+    </c:forEach>
+
+    <div style="clear: both"></div>
+</div>
 
 <%--底部--%>
 
@@ -38,7 +40,8 @@
 
 <div class="footer" style="background-color: #f6f6f6; margin-top:20px; padding-top: 30px">
     <div class="wrap">
-        <div class="row" style=" margin-left: 30px;margin-right: 30px;color: #1b1b1b; border-bottom: 2px solid grey;padding-bottom: 30px">
+        <div class="row"
+             style=" margin-left: 30px;margin-right: 30px;color: #1b1b1b; border-bottom: 2px solid grey;padding-bottom: 30px">
             <div class="col-xs-2">
                    <span>
                    <i class="glyphicon glyphicon-lock" style="font-size:24px"></i>
@@ -80,7 +83,7 @@
     </div>
 
     <div class="bootom">
-        <div class="row"  style=" margin-left: 30px; color:dimgrey;margin-right: 30px; margin-top: 20px">
+        <div class="row" style=" margin-left: 30px; color:dimgrey;margin-right: 30px; margin-top: 20px">
             <div class="col-xs-2">
                 <h4>售后服务</h4>
                 <p>配送说明</p>
@@ -113,13 +116,14 @@
             <div class="col-xs-2">
                 <h4>联系我们</h4>
                 <p>全国热线：6620-5582</p>
-                <p><button>在线客服</button></p>
+                <p>
+                    <button>在线客服</button>
+                </p>
                 <p>客服工作时间;8:30-21:00</p>
-                <p>售后服务电话：13378216662</p>
+                <p>售后服务电话：xxxxxxx</p>
             </div>
             <div class="col-xs-2">
-                <p><img src="${pageContext.request.contextPath}/images/erweima.png" width="120" height="120"> </p>
-                <p>公众号</p>
+                <p>公众号:xxxx</p>
             </div>
         </div>
     </div>

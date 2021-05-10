@@ -24,6 +24,9 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/pages/admin/index.jsp">后台管理系统</a>
                 </div>
+                <div class="navbar-header" style="float: right; margin-right: 30px;">
+                    <a class="navbar-brand" href="${pageContext.request.contextPath}/pages/index/list"><font  style='font-size:16px;' color='red'><b>戳我，返回前台</b></font></a>
+                </div>
             </nav>
             <br/>
             <br/>
@@ -33,11 +36,11 @@
                     <div class="col-md-3" style="float: left;margin-left: -10%">
                         <div class="list-group" style="float: left">
                             <a target="fname" href="System/User/index.jsp" class="list-group-item"><span
-                                    class="glyphicon glyphicon-home"></span>用户管理</a><br>
+                                    class="glyphicon glyphicon-home"></span >用户管理</a><br>
                             <a target="fname" href="Flower/Product/index.jsp" class="list-group-item"><span
-                                    class="glyphicon glyphicon-file"></span>产品管理</a><br>
+                                    class="glyphicon glyphicon-file"></span> 产品管理</a><br>
                             <a target="fname" href="Flower/Order/index.jsp" class="list-group-item"><span
-                                    class="glyphicon glyphicon-file"></span>订单管理</a><br>
+                                    class="glyphicon glyphicon-file"></span> 订单管理</a><br>
                         </div>
                     </div>
                     <div class="col-md-8 column" style="width:75%;">

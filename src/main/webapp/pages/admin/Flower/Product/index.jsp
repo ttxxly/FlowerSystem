@@ -10,9 +10,9 @@
 <head>
     <title>产品管理</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../../../css/flower.css">
+    <link rel="stylesheet" type="text/js" href="${pageContext.request.contextPath}/js/cdn/jquery.min.js"/>
+    <link rel="stylesheet" type="text/js" href="${pageContext.request.contextPath}/js/cdn/bootstrap.min.js"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/flower.css">
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <script>
         function deleteFlowerById(flowerId) {

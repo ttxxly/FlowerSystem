@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/js" href="${pageContext.request.contextPath}/js/cdn/popper.min.js"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/index.css">
     <script type="text/css" src="${pageContext.request.contextPath}/js/index.js"></script>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
