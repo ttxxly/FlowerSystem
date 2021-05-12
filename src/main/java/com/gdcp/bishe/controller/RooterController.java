@@ -23,7 +23,12 @@ public class RooterController {
         System.out.println(rooter);
         if(rooter != null){
             session.setAttribute("ROOTER_SESSION",rooter);
-            return "redirect:../pages/admin/index.jsp";
+            if (rooter.getRooterName().equals("admin")) {
+                return "redirect:../pages/admin/index.jsp";
+            }else {
+                return "redirect:../pages/admin/index2.jsp";
+            }
+
         }
         model.addAttribute("msg","登录失败，请重试");
         return "login/Rlogin";

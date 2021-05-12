@@ -36,18 +36,12 @@
                     <div class="col-md-12 column">
                         <div class="col-md-3" style="float: left;margin-left: -10%">
                             <div class="list-group" style="float: left">
-                                <a target="fname" href="System/dispatch/index.jsp" class="list-group-item"><span
-                                        class="glyphicon glyphicon-home"></span >配送管理</a><br>
-                                <a target="fname" href="Flower/Order/index.jsp" class="list-group-item"><span
-                                        class="glyphicon glyphicon-file"></span> 订单管理</a><br>
-                                <a target="fname" href="System/User/index.jsp" class="list-group-item"><span
-                                        class="glyphicon glyphicon-home"></span >会员管理</a><br>
-                                <a target="fname" href="Flower/sell/index.jsp" class="list-group-item"><span
-                                        class="glyphicon glyphicon-file"></span> 销售管理</a><br>
+                                <a target="fname" href="Flower/Product/index.jsp" class="list-group-item"><span
+                                        class="glyphicon glyphicon-file"></span> 花品管理</a><br>
                                 <a target="fname" href="System/message/index.jsp" class="list-group-item"><span
-                                        class="glyphicon glyphicon-file"></span> 留言管理</a><br>
-                                <a href="${pageContext.request.contextPath}/pages/index/list" class="list-group-item"><span
-                                        class="glyphicon glyphicon-file"></span> 系统管理</a><br>
+                                        class="glyphicon glyphicon-home"></span >沟通管理</a><br>
+                                <a target="fname" href="Flower/Order/index.jsp" class="list-group-item"><span
+                                        class="glyphicon glyphicon-file"></span> 查看订单</a><br>
                             </div>
                         </div>
                         <div class="col-md-8 column" style="width:75%;color: #555;">

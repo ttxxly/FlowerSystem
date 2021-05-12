@@ -90,7 +90,9 @@
     <div class="header">
         <div class="header-banner clearfix">
             <div class="header-left">
-                <img src="${pageContext.request.contextPath}/images/timg4.jpg" height="94" width="216">
+                <a href="${pageContext.request.contextPath}/" class="info">
+                    <img src="${pageContext.request.contextPath}/images/timg4.jpg" height="94" width="216">
+                </a>
             </div>
             <div class="header-right">
                 <div class="reg-login">
@@ -135,7 +137,7 @@
 
             <div class="phone">
                 <a href="#">
-                    <span class="glyphicon glyphicon-user"></span><span> 0624-75495</span></a>
+                    <span class="glyphicon glyphicon-user"></span><span>123456</span></a>
             </div>
         </div>
     </div>

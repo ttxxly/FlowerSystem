@@ -120,7 +120,7 @@
                     <button>在线客服</button>
                 </p>
                 <p>客服工作时间;8:30-21:00</p>
-                <p>售后服务电话：xxxxxxx</p>
+                <p>售后服务电话：123456x</p>
             </div>
             <div class="col-xs-2">
                 <p>公众号:xxxx</p>

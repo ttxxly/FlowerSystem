@@ -86,7 +86,7 @@
 			</div>
 			<div class="phone">
 				<a href="#">
-					<span class="glyphicon glyphicon-user"></span><span> 0624-75495</span></a>
+					<span class="glyphicon glyphicon-user"></span><span>123456</span></a>
 			</div>
 		</div>
 	</div>
